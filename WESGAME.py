@@ -5,18 +5,18 @@ import random
 def main():
 	print "guess a number between one and ten"
 	randomnumber = random.randint(1,10)
-	catch = False 
+	DECISIVE = False 
 
 
-	while not catch:
+	while not DECISIVE:
 		userguess=input("guess your number here:")
 		if userguess==randomnumber:
 			print "congrats you won!"
-			catch = True
+			DECISIVE = True
 		elif userguess>randomnumber:
 			print "guess lower!"
 		else:
-			print "guess higher!"
+			print "guess higher!!!!!"
 
 
 	print "thanks for playing, come back again soon!"
